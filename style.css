@@ -99,3 +99,12 @@ h1 {
   margin-right: auto;
   width: 50%;
 }
+
+a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
