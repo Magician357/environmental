@@ -1,7 +1,127 @@
-.links a,p{font-family:"Open Sans",sans-serif}.links a:hover,.title{border-bottom:1px solid #000}:root{--background:linear-gradient(
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+  /* Colors */
+  --background: linear-gradient(
     121deg,
     rgba(255, 235, 235, 1) 0%,
     rgba(237, 249, 255, 1) 39%,
     rgba(221, 255, 237, 1) 71%,
     rgba(238, 255, 234, 1) 100%
-  );--backgroundSolid:rgb(255, 235, 235);--backgroundSmall:#e7ecfe;--pColor:#01081d;--titleColor:black;--buttonColor:white;--linkColor:#f5c529}body{background:var(--backgroundSolid);background:var(--background);margin:0;padding:0}p{color:var(--pColor)}#sidebarButton,h1{font-family:"Abril Fatface",cursive}h1{color:var(--titleColor)}.sidebar{top:0;width:0;position:fixed;height:100vw;background:var(--backgroundSmall);overflow-x:hidden;z-index:100;-webkit-transition:width 450ms;-o-transition:width 450ms;transition:width 450ms}.sidebar .links{margin-left:10px;margin-top:10px}.links a{color:#000;text-decoration:none;text-shadow:1px 0 0 var(--linkColor),0 -1px 0 var(--linkColor),0 1px 0 var(--linkColor),-1px 0 0 var(--linkColor);-webkit-transition:border-bottom 1s;-o-transition:border-bottom 1s;transition:border-bottom 1s}.main{-webkit-transition:margin-left .5s;-o-transition:margin-left .5s;transition:margin-left .5s;margin-left:10px;margin-right:10px}#sidebarButton{position:fixed;top:0;right:0;border-radius:10px;background:var(--buttonColor);width:150px;height:50px;font-size:20px}.title{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.imgleft{float:left}.centered{display:block;margin-left:auto;margin-right:auto;width:50%}
+  );
+  --backgroundSolid: rgb(255, 235, 235);
+  --backgroundSmall: #e7ecfe;
+  --pColor: #01081d;
+  --titleColor: black;
+  --buttonColor: white;
+  --linkColor: #f5c529;
+}
+
+body {
+  background: var(--backgroundSolid);
+  background: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: var(--pColor);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: var(--titleColor);
+  font-family: "Abril Fatface", cursive;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  top: 0;
+  width: 0px;
+  position: fixed;
+  height: 100vw;
+  background: var(--backgroundSmall);
+  overflow-x: hidden;
+  z-index: 100;
+  -webkit-transition: width 450ms;
+  -o-transition: width 450ms;
+  transition: width 450ms;
+}
+
+.sidebar .links {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 1px 0 0 var(--linkColor), 0 -1px 0 var(--linkColor),
+    0 1px 0 var(--linkColor), -1px 0 0 var(--linkColor);
+  -webkit-transition: border-bottom 1s;
+  -o-transition: border-bottom 1s;
+  transition: border-bottom 1s;
+}
+
+.links a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.main {
+  -webkit-transition: margin-left 500ms;
+  -o-transition: margin-left 500ms;
+  transition: margin-left 500ms;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#sidebarButton {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  background: var(--buttonColor);
+  width: 150px;
+  height: 50px;
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
+}
+
+.title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: solid 1px black;
+}
+
+.imgleft {
+  float: left;
+}
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
